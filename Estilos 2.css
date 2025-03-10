@@ -1,0 +1,22 @@
+ul{
+	list-style-type: none;
+	width: 20%;
+	background-color: coral;
+	padding: 0;
+	margin: 0;
+}
+li a{
+	display: block;
+	background-color: lightcoral;
+	padding: 14px;
+	text-decoration: none; /* Quita el subrayado */
+	font-family: verdana, arial, sans-serif;
+}
+li a:hover{
+	background-color: coral;
+	color: white;
+}
+li a.activo{ /* el primer elemento va a tener el formato que tiene la clase "activo" */
+	background-color: darkred;
+	color: white;
+}
