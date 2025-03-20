@@ -1,0 +1,94 @@
+* {/*Se aplica a todos los elementos del archivo html (* como el selector universal)*/
+    margin: 0;/* Quita el margen externo de todos los elementos */
+    padding: 0;/* Quita el espaciado alrededor de todos los elementos */
+    box-sizing: border-box;/*Ajusta el alto y ancho incluyendo el margen y el padding*/
+}
+
+body {
+    font-family: Arial, sans-serif;/* Fuente principal para el cuerpo de la página */
+    line-height: 1.6;/* Altura de línea o renglón */
+}
+
+header {
+    background-color: #FC0AA7;
+    /* Fondo rosa fuerte para el encabezado que contiene la barra de navegación */
+    color: white;
+    padding: 20px 0;/* Espaciado interno arriba y abajo */
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;/* Espaciado inferior para títulos */
+}
+
+.navbar {
+    width: 100%;/* Ancho completo de la barra de navegación */
+    background-color: #444;/* Fondo gris oscuro */
+    overflow: hidden;
+    /* Contenido interno no se desfasa con respecto a otros elementos
+    de la página web */
+}
+
+.navbar ul {
+    list-style-type: none;/* Quita los puntos o viñetas de la lista */
+}
+
+.navbar li {/*Para seleccionar cualquier elemento de la clase navbar (clase)*/
+    display: inline;/*Elementos en un sólo renglón en la barra de navegación*/
+    padding: 0 20px;/* Espaciado horizontal entre los elementos de la barra
+    de navegación*/
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;/* Quita el subrayado de los enlaces */
+}
+
+.navbar li a:hover {
+    background-color: #555;/* Fondo de color gris medio al pasar el cursor */
+}
+
+main {
+    padding: 20px;/* Espaciado interno para el contenido principal */
+}
+
+section {
+    margin-bottom: 20px;/* Espaciado inferior entre secciones */
+}
+
+footer {
+    background-color: #333;/* Fondo de gris oscuro para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    /* Espaciado interno arriba y abajo */
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    width: 30%;
+    text-align: left;
+    padding: 5px;
+}
+
+#TextoGrande{
+    font-size: 25px;
+}
+
+.centered-image2{/*Hace que la imagen Oferta.jpg se centre verticalmente ocupando todo el ancho
+    disponible*/
+    width: 100%;
+    margin: auto;
+}
+
+.centered-image1{
+    width: 100%;
+    display: block;/*Hace que la imagen Servicios.jpg no se acomode "en línea"
+    con el texto para que ocupe todo el ancho disponible y se pueda centrar
+    horizontalmente con margin: auto;*/
+    margin: auto;
+}
