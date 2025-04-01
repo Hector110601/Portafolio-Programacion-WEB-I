@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <link rel="icon" type="image/jpg" href="imagenesproyecto/icono.jpg">
+    <link rel="stylesheet" type="text/css" href="estilosprincipal.css">
+</head>
+<body>
+    <header>
+        <h1>TuTiendaVirtual</h1>
+        <h2>¡Todo lo que necesitas a un clic de distancia!</h2>
+        <nav class="navbar"><!-- Barra de navegación horizontal -->
+            <ul><!-- Lista de opciones de la barra de navegación horizontal -->
+                <li><a href="Proyecto (página principal).html">HOME</a></li>
+                <li><a href="Proyecto (página inicio).html">Inicio</a></li>
+                <li><a href="#Promociones-semanales">Promociones semanales</a></li>
+                <!-- Colocar link a la sección de Promociones semanales -->
+                <li><a href="#Otros-sitios">Otros sitios</a></li>
+                <!-- Colocar link a la sección de Otros sitios -->
+                <li><a href="#Sobre-nosotros">Sobre nosotros</a></li>
+                <!-- Colocar link a la sección de Sobre nosotros -->
+            </ul>
+        </nav>
+    </header>
+
+    <main><!-- Contenido principal de la página HOME-->
+        <h1 class="titulo" style="text-shadow: 2px 2px 5px rgba(0,0,0, 0.5);">¡Empieza tu recorrido ahora!</h1>
+        <!--Para barra de búsqueda-->
+        <div class="search-container">
+            <form action="/buscar" method="get">
+                <input type="text" placeholder="Buscar productos, categorías, etc." name="query" class="search-bar">
+                <!--Para botón de búsqueda-->
+                <button type="submit" class="search-btn">🔍</button>
+            </form>
+        </div>
+        <!--Para botones de registrarse e iniciar sesión-->
+        <div class="button-container">
+            <button class="action-btn">Registrarse</button>
+            <button class="action-btn">Iniciar sesión</button>
+        </div>
+    </main>
+
+</body>
+<footer>
+        <p>© 2025 TuTiendaVirtual. Todos los derechos reservados.</p>
+        <p>Contacto: atencion@tutiendavirtual.com.mx</p>
+        <p>Página web desarrollada para la materia de Programación Web I</p>
+        <p>Primavera 2025. Universidad Politécnica de San Luis Potosí</p>
+    </footer>
+</html>

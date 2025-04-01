@@ -1,0 +1,119 @@
+* {/*Se aplica a todos los elementos del archivo html (* como el selector universal)*/
+    margin: 0;/* Quita el margen externo de todos los elementos */
+    padding: 0;/* Quita el espaciado alrededor de todos los elementos */
+    box-sizing: border-box;/*Ajusta el alto y ancho incluyendo el margen y el padding*/
+}
+
+header {
+    background-color: #ffad1e;
+    /* Fondo naranja-amarillo para el encabezado que contiene la barra de navegación */
+    color: white;
+    padding: 20px 0;/* Espaciado interno arriba y abajo */
+    text-align: center;
+}
+
+main {
+    padding: 20px; /* Espaciado interno para el contenido principal */
+    text-align: center;
+    font-size: 25px;
+    background-image: url('imagenesproyecto/sala.jpg');
+    background-size: cover; /* Escala la imagen para que cubra completamente el fondo*/
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    text-align: center;
+    color: white;
+    flex: 1; /*Hace que la imagen de fondo ocupe todo el espacio disponible
+    desplazando al footer en la parte de abajo de la página*/
+}
+
+.search-container {
+    margin-top: 20px; /* Espaciado superior */
+    text-align: center; /* Centra horizontalmente la barra de búsqueda */
+}
+
+.search-bar {
+    width: 300px; /* Ancho de la barra de búsqueda */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border: 1px solid lightgray; /* Color del borde */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.search-btn {
+    background-color: #ffad1e; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.search-btn:hover {
+    background-color: #e59416; /* Color del botón al pasar el cursor */
+}
+
+.button-container {
+    margin-top: 50px; /* Espaciado superior */
+    text-align: center; /* Centra horizontalmente los botones */
+}
+
+.action-btn {
+    background-color: #43c3ec; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 0 10px; /* Espaciado entre los botones */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    text-transform: uppercase; /* Mayúsculas en el texto */
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.action-btn:hover {
+    background-color: #e59416; /* Color al pasar el cursor */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex; /* Define un contenedor flexbox */
+    flex-direction: column; /* Alinea elementos de forma vertical */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el alto total de la ventana */
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;/* Ancho completo de la barra de navegación */
+    background-color: #444;/* Fondo gris oscuro */
+    overflow: hidden;
+    /* Contenido interno no se desfasa con respecto a otros elementos
+    de la página web */
+}
+
+.navbar ul {
+    list-style-type: none;/* Quita los puntos o viñetas de la lista */
+}
+
+.navbar li {/*Para seleccionar cualquier elemento de la clase navbar (clase)*/
+    display: inline;/*Elementos en un sólo renglón en la barra de navegación*/
+    padding: 0 20px;/* Espaciado horizontal entre los elementos de la barra
+    de navegación*/
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;/* Quita el subrayado de los enlaces */
+}
+
+.navbar li a:hover {
+    background-color: #555;/* Fondo de color gris medio al pasar el cursor */
+}
+
+footer {
+    background-color: #333;/* Fondo de gris oscuro para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    /* Espaciado interno arriba y abajo */
+}
