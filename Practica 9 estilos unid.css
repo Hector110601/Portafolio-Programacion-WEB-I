@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: darkred;
+    font-size: 16px; /* Tamaño base para cálculos con em y rem */
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+/* Contenedor de secciones */
+section {
+    background-color: white;
+    margin: 2vh auto;
+    padding: 2vw;
+    max-width: 600px;
+    border: 1px solid #ddd;
+}
+
+/* Unidades absolutas */
+.absolute {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    font-size: 12px; /* Tamaño fijo */
+    margin: 10px auto;
+}
+
+/* Unidades relativas */
+.relative {
+    width: 50%;
+    background-color: lightgreen;
+    font-size: 1.5em; /* Basado en el tamaño del texto padre */
+    margin: 2vh auto;
+    padding: 2em;
+}
+
+/* Unidades de viewport */
+.viewport {
+    width: 50vw; /* 50% del ancho de la ventana */
+    height: 30vh; /* 30% de la altura de la ventana */
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Relativo al tamaño raíz */
+}
+
+footer {
+    background-color: darkgray;
+    color: white;
+    padding: 1rem;
+}
