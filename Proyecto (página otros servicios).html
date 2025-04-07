@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <link rel="icon" type="image/jpg" href="imagenesproyecto/icono.jpg">
+    <link rel="stylesheet" type="text/css" href="estilosservicios.css">
+</head>
+<body>
+    <header>
+        <h1>TuTiendaVirtual</h1>
+        <h2>¡Todo lo que necesitas a un clic de distancia!</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Proyecto (página principal).html">HOME</a></li>
+                <li><a href="Proyecto (página inicio).html">Inicio</a></li>
+                <li><a href="#Promociones-semanales">Promociones semanales</a></li>
+                <li><a href="Proyecto (página otros servicios).html">Otros servicios</a></li>
+                <li><a href="#Sobre-nosotros">Sobre nosotros</a></li>
+                <li>
+                    <div class="search-container">
+                        <form action="/buscar" method="get">
+                            <input type="text" placeholder="Buscar productos, categorías, etc." name="query" class="search-bar">
+                            <button type="submit" class="search-btn">🔍</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenedor-mapa-tarjetas">
+            <div class="columna mapa">
+                <h3>Sucursales más cercanas a tu domicilio</h3>
+                <p>Mira qué tan lejos estás de cualquier sucursal de TuTiendaVirtual.</p><br/>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.0954099845517!2d-100.98682832471265!3d22.1223376798149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f5412c6b56f%3A0xe1b3dea4c6aa1c03!2sUniversidad%20Politécnica%20de%20San%20Luis%20Potosí!5e0!3m2!1ses!2smx!4v1739815774391!5m2!1ses!2smx"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="linea-vertical"></div>
+
+            <div class="columna tarjetas">
+                <h3>¿Ya cuentas con una tarjeta TuTiendaVirtual?</h3>
+                <p>Conoce todas las ventajas que ofrecen las Tarjetas TuTiendaVirtual y elige la ideal para ti.</p>
+                <div class="tarjeta-container">
+                    <div class="tarjeta">
+                        <h4>TuTiendaVirtual<br>Departamental</h4>
+                        <img src="imagenesproyecto/tarjeta 1.jpg" width="100">
+                        <ul>
+                            <li>10% de descuento adicional en tu primer día de compras.</li>
+                            <li>Sin costo por anualidad.</li>
+                            <li>Tarjetas adicionales sin costo.</li>
+                        </ul>
+                    </div>
+                    <div class="tarjeta">
+                        <h4>TuTiendaVirtual<br>Visa</h4>
+                        <img src="imagenesproyecto/tarjeta 2.jpg" width="100">
+                        <ul>
+                            <li>10% de descuento adicional en tu primer día.</li>
+                            <li>Programa de Puntos Amarillos.</li>
+                            <li>Sin anualidad el primer año.</li>
+                            <li>Aceptada en miles de lugares.</li>
+                        </ul>
+                    </div>
+                    <div class="tarjeta">
+                        <h4>TuTiendaVirtual<br>Garantizada</h4>
+                        <img src="imagenesproyecto/tarjeta 3.jpg" width="100">
+                        <ul>
+                            <li>Para mejorar tu historial crediticio.</li>
+                            <li>10% de descuento adicional.</li>
+                            <li>Depósito desde $1,000 hasta $50,000.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 TuTiendaVirtual. Todos los derechos reservados.</p>
+        <p>Contacto: atencion@tutiendavirtual.com.mx</p>
+        <p>Página web desarrollada para la materia de Programación Web I</p>
+        <p>Primavera 2025. Universidad Politécnica de San Luis Potosí</p>
+    </footer>
+</body>
+</html>

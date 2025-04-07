@@ -4,6 +4,11 @@
     box-sizing: border-box;/*Ajusta el alto y ancho incluyendo el margen y el padding*/
 }
 
+iframe {/*Centra el video*/
+  display: block;
+  margin: auto;
+}
+
 .search-container {
     display: flex; /* Habilita Flexbox para organizar los elementos. */
     align-items: center; /* Asegura que los elementos estén alineados verticalmente. */
@@ -122,4 +127,63 @@ form {
     con el texto para que ocupe todo el ancho disponible y se pueda centrar
     horizontalmente con margin: auto;*/
     margin: auto;
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .search-bar {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .navbar ul {
+        justify-content: flex-start; /* Cambiar alineación */
+    }
+}
+
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .search-bar {
+        width: 350px;
+    }
+
+    .navbar li {
+        padding: 10px 15px;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) {
+    .search-container {
+        flex-direction: column; /* Elementos en columna */
+    }
+
+    .search-bar {
+        width: 90%; /* Barra de búsqueda más pequeña */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Barra de navegación en vertical */
+    }
+
+    .navbar li {
+        padding: 10px 0;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .search-btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
 }
