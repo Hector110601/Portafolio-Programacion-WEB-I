@@ -1,0 +1,58 @@
+ul{
+	list-style-type: none;
+	width: 20%;
+	background-color: coral;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	position: fixed; /* Mantiene la barra de navegación fija */
+	overflow: auto; /* Permite deslizarse por la barra de navegación */
+}
+li a{
+	display: block;
+	background-color: coral;
+	padding: 14px;
+	text-decoration: none; /* Quita el subrayado */
+	font-family: verdana, arial, sans-serif;
+}
+li a:hover{
+	background-color: lightcoral;
+	color: white;
+}
+li a.activo{ /* el primer elemento va a tener el formato que tiene la clase "activo" */
+	background-color: darkred;
+	color: white;
+}
+
+.capa1{
+	margin-left: 22.5%;
+	padding: 12px;
+}
+@font-face{
+	font-family: "fuente1";
+	src: url("MeowScript-Regular.ttf") 
+	format("truetype");
+}
+
+p{
+	text-align: justify;
+	font-family: "Delius", cursive;
+ 	font-weight: 400;
+ 	font-style: normal;
+}
+
+h1{
+	font-family: "Pacifico", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+h2{
+	font-family: "Bangers", system-ui;
+	text-align: center;
+	font-weight: 400;
+    font-style: normal;
+}
+h3{
+	font-family: 'fuente1';
+	text-align: center;
+}
