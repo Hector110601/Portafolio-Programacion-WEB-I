@@ -63,3 +63,7 @@ body {
 .contenedor-boton:hover + .galeria .imagen.margen {
     border: none;
 }
+
+.contenedor-boton:hover + .galeria .imagen .margen {
+    border: none;
+}
