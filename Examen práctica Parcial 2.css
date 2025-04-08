@@ -1,0 +1,60 @@
+h1, h2 {
+    text-align: center;
+}
+
+body {
+    background-color: darkred;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenedor-boton {
+    margin-bottom: 20px;
+}
+
+#mostrar {
+    background-color: blue; 
+    color: white; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+#mostrar:hover {
+    background-color: white; 
+    color: blue;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; 
+}
+
+.imagen {
+    padding: 5px;
+}
+
+.margen {
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.contenedor-boton:hover + .galeria .imagen img {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
