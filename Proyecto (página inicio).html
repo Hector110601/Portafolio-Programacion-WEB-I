@@ -11,39 +11,35 @@
     <header>
         <h1>TuTiendaVirtual</h1>
         <h2>¡Todo lo que necesitas a un clic de distancia!</h2>
-        <nav class="navbar"><!-- Barra de navegación horizontal -->
-            <ul><!-- Lista de opciones de la barra de navegación horizontal -->
+        <nav class="navbar">
+            <ul>
                 <li><a href="Proyecto (página principal).html">HOME</a></li>
                 <li><a href="Proyecto (página inicio).html">Inicio</a></li>
-                <li><a href="#Promociones-semanales">Promociones semanales</a></li>
-                <!-- Colocar link a la sección de Promociones semanales -->
                 <li><a href="Proyecto (página otros servicios).html">Otros servicios</a></li>
-                <!-- Colocar link a la sección de Otros sitios -->
-                <li><a href="#Sobre-nosotros">Sobre nosotros</a></li>
-                <!-- Colocar link a la sección de Sobre nosotros -->
-                <li><!--Para barra de búsqueda-->
+                <li><a href="Proyecto (página ayuda).html">Ayuda</a></li>
+                <li><a href="Proyecto (página sobre nosotros).html">Sobre nosotros</a></li>
+                <li>
                     <div class="search-container">
                         <form action="/buscar" method="get">
                             <input type="text" placeholder="Buscar productos, categorías, etc." name="query" class="search-bar">
                             <!--Para botón de búsqueda-->
                             <button type="submit" class="search-btn">🔍</button>
                         </form>
-                    </div></li>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main><!-- Agrupa el contenido principal de la página web-->
+    <main>
         <section id="inicio">
             <h3>¡Bienvenido a TuTiendaVirtual!</h3>
             <img src="imagenesproyecto/Oferta.jpg" class="centered-image2">
-            <p>Tu mejor opción en ropa, accesorios, electrónica, hogar, deportes, etc.</p>
+            <p>Tu mejor opción en ropa, accesorios, electrónica, hogar, deportes, etc.</p><br/>
         </section>
 
         <div class="contenedorvideo">    
-          <iframe 
-            width="560" 
-            height="315" 
+          <iframe
             src="https://www.youtube.com/embed/VrWZIZL-clU" 
             title="YouTube video player" 
             frameborder="0" 
@@ -52,44 +48,39 @@
           </iframe>
         </div>
 
-        <section id="promociones"> <h3>Ofertas de tiempo limitado</h3> <p>Aquí
-        podrás encontrar los mejores descuentos en todo lo que necesites.</p>
-        <table> <tr> <td><img src="imagenesproyecto/Oferta1.jpg";
-        usemap="#mapa1"; style="width: 150px; height: 200px;"> <map name
-        = "mapa1"> <area shape="rect" coords="0,0,300,400"
-        href="https://www.liverpool.com.mx/tienda/vestidos/catst4003101">
-        <br/><p><b>Tus vestidos favoritos</b></p><p>Hasta 50% de
-        descuento</p></td> <td><img src="imagenesproyecto/Oferta2.jpg";
-        usemap="#mapa2"; style="width: 150px; height: 200px;"> <map name
-        = "mapa2"> <area shape="rect" coords="0,0,300,400"
-        href="https://www.liverpool.com.mx/tienda?s=jeans"> <br/><p><b>Jeans
-        básicos espectaculares</b></p><p>Hasta 50% de descuento</p></td>
-        <td><img src="imagenesproyecto/Oferta3.jpg"; usemap="#mapa3";
-        style="width: 150px; height: 200px;"> <map name = "mapa3"> <area
-        shape="rect" coords="0,0,300,400"
-        href="https://www.liverpool.com.mx/tienda?s=playeras">
-        <br/><p><b>Playeras para todos los estilos</b></p><p>Hasta 50% de
-        descuento</p></td> <td><img src="imagenesproyecto/computadoras.JPG";
-        usemap="#mapa4"; style="width: 150px; height: 200pxpx;"> <map name
-        = "mapa4"> <area shape="rect" coords="0,0,300,400"
-        href="https://www.liverpool.com.mx/tienda?s=playeras">
-        <br/><p><b>Computadoras</b></p><p>Varios modelos</p></td> <td><img
-        src="imagenesproyecto/cocina.JPG"; usemap="#mapa5";
-        style="width: 150px; height: 200pxpx;"> <map name = "mapa5"> <area
-        shape="rect" coords="0,0,300,400"
-        href="https://www.liverpool.com.mx/tienda?s=playeras">
-        <br/><p><b>Baterías de cocina</b></p><p>Antihaderentes</p></td>
-        <td><img src="imagenesproyecto/smartphone.JPG"; usemap="#mapa6";
-        style="width: 150px; height: 200pxpx;"> <map name = "mapa"> <area
-        shape="rect" coords="0,0,300,400"
-        href="https://www.liverpool.com.mx/tienda?s=playeras">
-        <br/><p><b>Smartphones</b></p><p>Modelos más recientes</p></td> </tr>
-        </table> </section>
+        <section id="promociones"> <h3>Ofertas de tiempo limitado</h3>
+        <p>Aquí podrás encontrar los mejores descuentos en todo lo que necesites.</p>
+        <br/>
+            <div class="contenedor-promociones">
+                <img src="imagenesproyecto/Oferta1.png" style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+
+                <img src="imagenesproyecto/Oferta2.png" style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+
+                <img src="imagenesproyecto/Oferta3.png" style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+
+                <img src="imagenesproyecto/computadoras.png" style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+
+                <img src="imagenesproyecto/cocina.png" style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+
+                <img src="imagenesproyecto/smartphone.png" style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+            </div>
+        </section>
 
         <section id="servicios">
             <h3>¡Prepárate para esta temporada!</h3>
             <p>Hasta 45% de descuento en ropa y artículos del hogar.</p><br/>
-            <img src="imagenesproyecto/promociones.png"; usemap="#mapa4"; style = "width: 800px; height:350px;" class="centered-image1"><br/><br/>
+                <div class="contenedor-promociones">
+                    <img src="imagenesproyecto/promociones1.png"; usemap="#mapa4";
+                    style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+                        
+                    <img src="imagenesproyecto/promociones2.png"; usemap="#mapa4";
+                    style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+                        
+                    <img src="imagenesproyecto/promociones3.png"; usemap="#mapa4";
+                    style = "width: 200px; height:250px;" class="centered-image1"><br/><br/>
+                </div>
+        </section>
+    </main>
             
     <footer>
         <p>© 2025 TuTiendaVirtual. Todos los derechos reservados.</p>

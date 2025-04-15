@@ -86,17 +86,16 @@ body {
 .navbar {
     width: 100%;/* Ancho completo de la barra de navegación */
     background-color: #444;/* Fondo gris oscuro */
-    overflow: hidden;
-    /* Contenido interno no se desfasa con respecto a otros elementos
-    de la página web */
 }
 
 .navbar ul {
     list-style-type: none;/* Quita los puntos o viñetas de la lista */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar li {/*Para seleccionar cualquier elemento de la clase navbar (clase)*/
-    display: inline;/*Elementos en un sólo renglón en la barra de navegación*/
     padding: 0 20px;/* Espaciado horizontal entre los elementos de la barra
     de navegación*/
 }

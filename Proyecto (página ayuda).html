@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | TuTiendaVirtual</title>
+    <link rel="icon" type="image/jpg" href="imagenesproyecto/icono.jpg">
+    <link rel="stylesheet" type="text/css" href="estilosayuda.css">
+    <!-- Incluir Font Awesome para los íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>TuTiendaVirtual</h1>
+        <h2>¡Todo lo que necesitas a un clic de distancia!</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Proyecto (página principal).html">HOME</a></li>
+                <li><a href="Proyecto (página inicio).html">Inicio</a></li>
+                <li><a href="Proyecto (página otros servicios).html">Otros servicios</a></li>
+                <li><a href="Proyecto (página ayuda).html">Ayuda</a></li>
+                <li><a href="Proyecto (página sobre nosotros).html">Sobre nosotros</a></li>
+                <li>
+                    <div class="search-container">
+                        <form action="/buscar" method="get">
+                            <input type="text" placeholder="Buscar productos, categorías, etc." name="query" class="search-bar">
+                            <button type="submit" class="search-btn">🔍</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="help-bar">
+        <div class="help-bar-container">
+            <h1 class="help-title">¿Cómo podemos ayudarte?</h1>
+            <form action="/buscar" method="get" class="help-search-form">
+                <input type="text" name="query" placeholder="Busca preguntas frecuentes o palabras clave" class="help-search-input">
+                <button type="submit" class="help-search-button">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <h3>Preguntas Frecuentes</h3>
+            <div class="faq-container">
+                <div class="faq-column">
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Qué pasa si no aparece mi Fecha estimada de Entrega?</summary>
+                        <p class="faq-answer">Esto podría deberse a un retraso en el sistema o problemas logísticos. Puedes contactar al soporte para más información.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Por qué puede tardar más mi pedido?</summary>
+                        <p class="faq-answer">Los retrasos pueden deberse a problemas de inventario, alta demanda, o retrasos en la logística de entrega.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Qué pasa si aparece mi producto como Entregado y no lo he recibido?</summary>
+                        <p class="faq-answer">Te recomendamos verificar con tus vecinos o la oficina de paquetería local. Si no lo encuentras, contacta a nuestro soporte.</p>
+                    </details>
+                </div>
+                <div class="faq-column">
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Cómo puedo realizar una devolución?</summary>
+                        <p class="faq-answer">Para realizar una devolución, entra a la sección "Mis pedidos", selecciona el producto y sigue las instrucciones.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Cuánto tiempo tengo para devolver un producto?</summary>
+                        <p class="faq-answer">Tienes hasta 30 días desde la fecha de recepción del producto para devolverlo, siempre que cumpla con nuestras políticas.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Cómo puedo rastrear mi pedido?</summary>
+                        <p class="faq-answer">Entra a "Mis pedidos", selecciona el pedido correspondiente y haz clic en "Rastrear pedido".</p>
+                    </details>
+                </div>
+            </div>
+            <!-- Barra de íconos sociales debajo de las preguntas frecuentes -->
+            <div class="social-icons-faq">
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 TuTiendaVirtual. Todos los derechos reservados.</p>
+        <p>Contacto: atencion@tutiendavirtual.com.mx</p>
+        <p>Página web desarrollada para la materia de Programación Web I</p>
+        <p>Primavera 2025. Universidad Politécnica de San Luis Potosí</p>
+    </footer>
+</body>
+</html>

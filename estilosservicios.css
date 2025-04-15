@@ -4,6 +4,43 @@
     box-sizing: border-box;
 }
 
+.contenedor-promociones{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedorvideo{
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho de la pantalla */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+video{
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    height: auto;
+}
+
+iframe {/*Centra el video*/
+  display: block;
+  margin: auto;
+}
+
+.centered-image1{
+    width: 100%;
+    display: block;/*Hace que la imagen Servicios.jpg no se acomode "en línea"
+    con el texto para que ocupe todo el ancho disponible y se pueda centrar
+    horizontalmente con margin: auto;*/
+    margin: auto;
+}
+
+.centered-image2{/*Hace que la imagen Oferta.jpg se centre verticalmente ocupando todo el ancho
+    disponible*/
+    width: 100%;
+    margin: auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;

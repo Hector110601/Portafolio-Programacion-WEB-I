@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffad1e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    padding: 0 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: #ffad1e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #e59416;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: lightblue;
+}
+
+/* Reseteo de márgenes y padding para evitar inconsistencias en los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    background-color: #fff;
+    margin: auto; /* Centrar el formulario */
+    width: 90%;
+    max-width: 400px; /* Ancho máximo para evitar que sea demasiado grande */
+    display: flex;
+    flex-direction: column; /* Elementos organizados como columna */
+    align-items: center; /* Alinea horizontalmente al centro */
+    justify-content: center; /* Alinea verticalmente al centro */
+    min-height: 60vh; /* 60% de la altura de la ventana */
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,1.0); /* Sombra fuerte */
+    padding: 20px;
+}
+
+.form_paragraph {/* Título del formulario */
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.form_link {/* Enlace para crear una cuenta */
+    color: #ffad1e;
+    text-decoration: none;
+}
+
+.form_link:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Contenedor de los campos del formulario */
+.form_container {
+    width: 100%; /* Ocupa el ancho total del formulario */
+}
+
+/* Para cada grupo de campo */
+.form_group {
+    margin-bottom: 15px; /* Espacio entre los campos */
+    position: relative; /* Para posicionar elementos relacionados dentro */
+}
+
+/* Para etiquetas dentro de los campos */
+.form_label {
+    font-size: 1rem;
+    color: #555;
+    position: absolute; /* Posición sobre el campo */
+    top: 50%; /* Inicialmente centrado verticalmente */
+    left: 10px; /* Desplazamiento desde la izquierda */
+    transform: translateY(-50%); /* Centrado en el medio del campo */
+    transition: all 0.3s ease-in-out; /* Animación fluida al enfocar */
+    pointer-events: none; /* La etiqueta no puede ser seleccionada */
+}
+
+/* Estilo de los campos de entrada */
+.form_input {
+    width: 100%; /* Ocupa el ancho total del grupo */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px;
+    outline: none; /* Elimina el contorno negro al seleccionar un campo */
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Cambia la posición de la etiqueta si el campo tiene texto o está enfocado */
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+    top: -10px; /* Mueve la etiqueta hacia arriba */
+    font-size: 0.9rem; /* Reduce el tamaño de la letra */
+    color: #ffad1e; /* Cambia el color de la etiqueta */
+}
+
+/* Línea decorativa en los campos de entrada */
+.form_line {
+    width: 100%; /* Ocupa el ancho del campo */
+    height: 2px;
+    background-color: #ffad1e;
+    margin-top: 5px;
+    opacity: 0; /* Línea oculta por defecto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave al aparecer */
+}
+
+/* Aparece la línea decorativa cuando el campo está enfocado */
+.form_input:focus ~ .form_line {
+    opacity: 1;
+}
+
+/* Botón para enviar el formulario */
+.form_submit {
+    background-color: #ffad1e;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Cambio suave de color */
+}
+
+.form_submit:hover {
+    background-color: #e59416; /* Color más oscuro al pasar el cursor */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .search-bar {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .navbar ul {
+        justify-content: flex-start; /* Cambiar alineación */
+    }
+}
+
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .search-bar {
+        width: 350px;
+    }
+
+    .navbar li {
+        padding: 10px 15px;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) {
+    .search-container {
+        flex-direction: column; /* Elementos en columna */
+    }
+
+    .search-bar {
+        width: 90%; /* Barra de búsqueda más pequeña */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Barra de navegación en vertical */
+    }
+
+    .navbar li {
+        padding: 10px 0;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .search-btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}

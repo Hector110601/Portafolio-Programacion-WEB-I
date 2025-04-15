@@ -4,57 +4,11 @@
     box-sizing: border-box;
 }
 
-.contenedor-promociones{
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contenedorvideo{
-    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho de la pantalla */
-    height: auto; /* Ajusta la altura automáticamente */
-}
-
-video{
-    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
-    height: auto;
-}
-
-iframe {/*Centra el video*/
-  display: block;
-  margin: auto;
-}
-
-.centered-image1{
-    width: 100%;
-    display: block;/*Hace que la imagen Servicios.jpg no se acomode "en línea"
-    con el texto para que ocupe todo el ancho disponible y se pueda centrar
-    horizontalmente con margin: auto;*/
-    margin: auto;
-}
-
-.centered-image2{/*Hace que la imagen Oferta.jpg se centre verticalmente ocupando todo el ancho
-    disponible*/
-    width: 100%;
-    margin: auto;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
 header {
     background-color: #ffad1e;
     color: white;
     padding: 20px 0;
     text-align: center;
-}
-
-h1, h2, h3 {
-    margin-bottom: 10px;
 }
 
 .navbar {
@@ -109,8 +63,49 @@ h1, h2, h3 {
     background-color: #e59416;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+}
+
 main {
-    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list{
+    padding-left: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+section:hover {
+    background-color: green; /* Cambiar el color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregar sombra más prominente */
+    color: white;
 }
 
 footer {
@@ -118,56 +113,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-}
-
-.contenedor-mapa-tarjetas {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.columna {
-    flex: 1;
-    min-width: 300px;
-}
-
-.linea-vertical {
-    width: 2px;
-    background-color: black;
-    min-height: 400px;
-}
-
-.tarjeta-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.tarjeta {
-    border: 1px solid #ccc;
-    padding: 15px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-}
-
-.tarjeta h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.tarjeta img {
-    margin: 0 auto 10px auto;
-}
-
-.tarjeta ul {
-    font-size: 14px;
-    padding-left: 20px;
 }
 
 /* Pantallas grandes */
