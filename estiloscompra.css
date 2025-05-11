@@ -1,0 +1,243 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+main { 
+    max-width: 800px;
+    margin: 20px auto; 
+}
+body { 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify; 
+    background-color: lightgray;
+}
+section { 
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+fieldset {
+    border: 2px solid #ffad1e;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffad1e;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 50px;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffad1e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 173, 30, 0.5);
+}
+
+header { 
+    background-color: #ffad1e;
+    color: white;
+    padding: 20 px 0;
+    text-align: center; 
+}
+h1{ 
+    text-align: center; 
+}
+header h1 { 
+    font-size: 2rem;
+    margin-bottom: 0.5rem; 
+}
+header h2 { 
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 1rem; 
+}
+/* Barra de navegación */
+.navbar { 
+    width: 100%;
+    background-color: #333; 
+}
+.navbar ul { 
+    list-style-type: none; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.navbar li { 
+    padding: 0 20px; 
+}
+.navbar li a { 
+    color: white; 
+    text-decoration: none; 
+}
+.navbar li a:hover { 
+    background-color: #555; 
+}
+.search-container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.search-bar { 
+    width: 300px; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid lightgray; 
+    border-radius: 4px; 
+}
+.search-btn { 
+    background-color: #ffad1e; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+.search-btn:hover { 
+    background-color: #e59416; 
+}
+
+.checkbox-container {
+    display: flex; /* Organiza los elementos en una sola línea */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: flex-start; /* Asegura que el texto quede pegado al checkbox */
+    gap: 5px; /* Reduce la separación entre el checkbox y el texto */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    padding: 0; /* Asegura que no haya espacio adicional */
+    width: 18px; /* Tamaño uniforme para los checkboxes */
+    height: 18px;
+}
+
+.selector{
+    max-width: 250px;
+}
+
+.confirmar-compra {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: #ffad1e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.confirmar-compra:hover {
+    background: #e59416;
+    transform: scale(1.1);
+}
+
+.confirmar-compra:active {
+    background: #cc7a12;
+    transform: scale(0.95);
+}
+
+footer { 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+}
+
+/* Media Queries para responsive design */
+
+/* Tabletas (768px - 1024px) */
+@media (max-width: 1024px) {
+    .faq-container { 
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+    .navbar ul { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .navbar li { 
+        margin: 0.5rem 0; 
+    }
+    .search-container { 
+        margin-top: 0.5rem; 
+    }
+}
+
+/* Móviles (hasta 768px) */
+@media (max-width: 768px) {
+    header h1 { 
+        font-size: 1.5rem; 
+    }
+    header h2 { 
+        font-size: 1rem; 
+    }
+    .help-title { 
+        font-size: 1.4rem; 
+    }
+    .help-search-input { 
+        padding: 0.6rem; 
+    }
+    .faq-question { 
+        padding: 0.8rem; 
+    }
+    .faq-answer { 
+        padding: 0.8rem; 
+    }
+    .social-icons-faq { 
+        margin-top: 2rem; 
+    }
+    footer p { 
+        font-size: 0.8rem; 
+    }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .search-bar { 
+        width: 180px; 
+    }
+    .help-search-form { 
+        flex-direction: column; 
+    }
+    .help-search-input { 
+        border-radius: 4px; 
+        margin-bottom: 0.5rem; 
+    }
+    .help-search-button { 
+        border-radius: 4px; 
+        padding: 0.5rem; 
+    }
+    .social-icons-faq { 
+        flex-wrap: wrap; 
+    }
+}

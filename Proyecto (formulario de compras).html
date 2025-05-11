@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proyecto final | Formulario de compras</title>
+	<link rel="stylesheet" type="text/css" href="estiloscompra.css">
+	<script type="text/javascript" src="datosformulario.js"></script>
+	<link rel="icon" type="image/jpg" href="imagenesproyecto/icono.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+	<header>
+        <h1>TuTiendaVirtual</h1>
+        <h2>¡Todo lo que necesitas a un clic de distancia!</h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Proyecto (página principal).html">HOME</a></li>
+                <li><a href="Proyecto (página inicio).html">Inicio</a></li>
+                <li><a href="Proyecto (página otros servicios).html">Otros servicios</a></li>
+                <li><a href="Proyecto (formulario de compras).html">Comprar Ahora</a></li>
+                <li><a href="Proyecto (página ayuda).html">Ayuda</a></li>
+                <li><a href="Proyecto (página sobre nosotros).html">Sobre nosotros</a></li>
+                <li>
+                    <div class="search-container">
+                        <form action="/buscar" method="get">
+                            <input type="text" placeholder="Buscar productos, categorías, etc." name="query" class="search-bar">
+                            <button type="button" class="search-btn">🔍</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <h1>Formulario de compra en línea</h1>
+    <form name="formulario" onsubmit="return enviarFormulario(event)">
+        <fieldset>
+            <legend>Datos del cliente</legend>
+            <label for="user">Nombre de usuario (obligatorio):</label>
+            <input type="text" name="user" id="user" placeholder="Usuario" required><br/>
+            
+            <label for="email">Correo electrónico (obligatorio):</label>
+            <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required><br/>
+            
+            <label for="telefono">Número de teléfono (obligatorio):</label>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{10}" placeholder="XX-XX-XX-XX-XX" required><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dirección de envío</legend>
+            <label for="calle">Calle y número (obligatorio):</label>
+            <input type="text" name="calle" id="calle" placeholder="Calle y número" required><br/>
+            
+            <label for="colonia">Colonia (obligatorio):</label>
+            <input type="text" name="colonia" id="colonia" placeholder="Colonia" required><br/>
+            
+            <label for="cp">Código postal (obligatorio):</label>
+            <input type="text" name="cp" id="cp" placeholder="XXXXX" required><br/>
+            
+            <label for="ciudad">Ciudad (obligatorio):</label>
+            <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required><br/>
+            
+            <label for="estado">Estado (obligatorio):</label>
+            <input type="text" name="estado" id="estado" placeholder="Estado" required><br/>
+            
+            <label for="instrucciones">Instrucciones de entrega (opcional):</label>
+            <textarea name="instrucciones" id="instrucciones" placeholder="Ej: Dejar con el portero o no tocar el timbre"></textarea><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Método de pago</legend>
+            <h3>Opción 1: Tarjeta de crédito/débito</h3><br/>
+            <label for="calle">Número de tarjeta:</label>
+            <input type="text" name="tarjeta" id="tarjeta" placeholder="Con formato 1234 5678 9012 3456"><br/>
+            
+            <label for="colonia">Fecha de vencimiento (MM/AA):</label>
+            <input type="month" name="fecha" id="fecha"><br/>
+            
+            <label for="cp">CCVV (código de seguridad):</label>
+            <input type="text" name="cp" id="cp" placeholder="XXXXX" ><br/>
+            
+            <label for="ciudad">Nombre del titular (tal como aparece en la tarjeta):</label>
+            <input type="text" name="titular" id="titular" placeholder="Nombre del titular"><br/><br/>
+
+            <h3>Opción 2: PayPal</h3><br/>
+            <p>Serás redirigido a <a href="https://www.paypal.com/mx/home">PayPal</a> para completar el pago.</p>
+        </fieldset>
+
+        <fieldset>
+        	<legend>Productos agregados al carrito</legend>
+        	<h3 style="text-align: center;">Elige los productos que quieres comprar</h3>
+        	<label for="productos">Dispositivos electrónicos</label>
+        	<select class="selector" onchange="calcularTotal()">
+        		<option value="0">Seleccione un producto</option>
+        		<option value="22999" name="MacBook" id="MacBook">Apple MacBook Air 13 pulgadas M1 8GB RAM 256 GB SSD - $22,999 MXN</option>
+        		<option value="28999" name="smartphone" id="smartphone">Samsung Galaxy S24 Ultra 512GB - $28,999 MXN</option>
+		        <option value="21999" name="tablet" id="tablet">iPad Pro 11" M2 256GB - $21,999 MXN</option>
+		        <option value="7999" name="auriculares" id="auriculares">Sony WH-1000XM5 Auriculares inalámbricos - $7,999 MXN</option>
+		    </select>
+
+		        <label for="productos">Electrodomésticos</label>
+		    <select class="selector" onchange="calcularTotal()">
+		    	<option value="0">Seleccione un producto</option>
+		        <option value="34999" name="refrigerador" id="refrigerador">Refrigerador LG InstaView 30 pies cúbicos - $34,999 MXN</option>
+		        <option value="16499" name="lavadora" id="lavadora">Lavadora Samsung Digital Inverter 18 kg - $16,499 MXN</option>
+		        <option value="4299" name="cafetera" id="cafetera">Cafetera Nespresso Vertuo Next - $4,299 MXN</option>
+		    </select>
+
+		        <label>Ropa</label>
+		    <select class="selector" onchange="calcularTotal()">
+		    	<option value="0">Seleccione un producto</option>
+		    	<option value="799" name="playera" id="playera">Playera Nike Dri-FIT Running - $799 MXN</option>
+		        <option value="1499" name="jeans" id="jeans">Jeans Levi’s 501 Original Fit - $1,499 MXN</option>
+		        <option value="3499" name="zapatos" id="zapatos">Tenis Adidas Ultraboost 22 - $3,499 MXN</option>
+		    </select>
+
+		        <label>Juguetes</label>
+		    <select class="selector" onchange="calcularTotal()">
+		    	<option value="0">Seleccione un producto</option>
+		    	<option value="6999" name="lego" id="lego">LEGO Star Wars Millennium Falcon - $6,999 MXN</option>
+		        <option value="3199" name="muñeca" id="muñeca">Muñeca Barbie Dreamhouse - $3,199 MXN</option>
+		        <option value="2499" name="pista_carros" id="pista_carros">Pista Hot Wheels Mega Track - $2,499 MXN</option>
+		    </select>
+
+		        <label>Artículos del hogar</label>
+		    <select class="selector" onchange="calcularTotal()">
+		    	<option value="0">Seleccione un producto</option>
+		    	<option value="4999" name="silla" id="silla">Silla ergonómica de oficina - $4,999 MXN</option>
+		        <option value="899" name="lampara" id="lampara">Lámpara de escritorio LED regulable - $899 MXN</option>
+		        <option value="1299" name="vajilla" id="vajilla">Vajilla de porcelana 16 piezas - $1,299 MXN</option>
+        	</select><br/><br/>
+        	<p id="total" style="font-weight: bold;">Total a pagar: $0 MXN</p>
+        </fieldset>
+
+        <fieldset id="resumen" style="display: none;">
+		    <legend>Resumen y Confirmación</legend>
+
+		    <h3>Resumen del pedido</h3>
+		    <div id="resumenPedido">
+		        <p>No hay productos seleccionados aún.</p>
+		    </div>
+
+		    <div class="checkbox-container">
+			    <input type="checkbox" id="terminos" required>
+			    <label for="terminos">Acepto los términos y condiciones y políticas de privacidad</label>
+			</div>
+
+			<div class="checkbox-container">
+			    <input type="checkbox" id="newsletter">
+			    <label for="newsletter">Deseo recibir ofertas por correo</label>
+			</div>
+			<button type="button" class="confirmar-compra" onclick="enviarFormulario()">Confirmar compra</button>
+		</fieldset>
+    </form>
+    <div id="ticket-container" style="display: none; margin-top: 30px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h3 style="color: #ffad1e; text-align: center;">Tu ticket de compra</h3>
+    <iframe id="ticket-pdf" frameborder="0" width="100%" height="500px" style="border: 1px solid #ddd;"></iframe>
+    </div>
+</section>
+
+    <footer>
+        <p>© 2025 TuTiendaVirtual. Todos los derechos reservados.</p>
+        <p>Contacto: atencion@tutiendavirtual.com.mx</p>
+        <p>Página web desarrollada para la materia de Programación Web I</p>
+        <p>Primavera 2025. Universidad Politécnica de San Luis Potosí</p>
+    </footer>
+</body>
+</html>
+<!-- 
+<label for="carrera">Carrera: </label>
+					<select name="carrera" id="carrera">
+						<option value="ITI">Ing. Tec. Información</option>
+						<option value="ITEM">Ing. Telemática</option>
+					</select><br/><br/>
+					<label for="genero">Género</label><br/><br/>
+				<input type="radio" name="genero" id="genero" value="f">
+				Femenino<br/>
+				<input type="radio" name="genero" id="genero" value="m">
+				Masculino<br/><br/>
+				<input type="checkbox" name="privacidad" id="privacidad">
+				<label for="privacidad">Acepto los términos y condiciones de uso y privacidad</label><br/>
+				<input type="button" name="envío" id="envío" value="Obtener datos" onclick="leer()">
+-->
