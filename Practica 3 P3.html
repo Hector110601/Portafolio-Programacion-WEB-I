@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnóstico Inteligencia Artificial</title>
+  <link rel="stylesheet" href="Practica 3 P3.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Cuestionario de Diagnóstico: Inteligencia Artificial</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. ¿Qué es el Aprendizaje Automático (Machine Learning)?</p>
+        <label><input type="radio" name="q1" value="1"> Rama de la IA que aprende de datos</label><br>
+        <label><input type="radio" name="q1" value="0"> Sistema de bases de datos</label>
+      </div>
+      <div class="question">
+        <p>2. ¿Cuál es un ejemplo de red neuronal?</p>
+        <label><input type="radio" name="q2" value="1"> Perceptrón multicapa</label><br>
+        <label><input type="radio" name="q2" value="0"> Hoja de cálculo</label>
+      </div>
+      <div class="question">
+        <p>3. ¿Qué es el Procesamiento de Lenguaje Natural (PLN)?</p>
+        <label><input type="radio" name="q3" value="1"> Análisis de texto por ordenador</label><br>
+        <label><input type="radio" name="q3" value="0"> Base de datos relacional</label>
+      </div>
+      <div class="question">
+        <p>4. ¿Qué es la Visión Artificial?</p>
+        <label><input type="radio" name="q4" value="1"> Técnica para que las máquinas interpreten imágenes</label><br>
+        <label><input type="radio" name="q4" value="0"> Base de datos de imágenes</label>
+      </div>
+      <div class="question">
+        <p>5. ¿Cuál es un ejemplo de algoritmo de clustering?</p>
+        <label><input type="radio" name="q5" value="1"> K-means</label><br>
+        <label><input type="radio" name="q5" value="0"> Árbol de decisión</label>
+      </div>
+      <div class="question">
+        <p>6. ¿Qué librería de Python se usa comúnmente en Deep Learning?</p>
+        <label><input type="radio" name="q6" value="1"> TensorFlow</label><br>
+        <label><input type="radio" name="q6" value="0"> Pandas</label>
+      </div>
+      <!-- Puedes agregar más preguntas si lo deseas -->
+      <button type="button" id="submitBtn">Evaluar</button>
+    </form>
+
+    <div id="score" class="score-box"></div>
+    <canvas id="resultChart"></canvas>
+    <button id="downloadPDF" class="pdf-btn">Generar PDF</button>
+    <div id="pdfContainer" class="pdf-container" style="display:none; margin-top:20px;">
+      <h2>Vista previa del PDF</h2>
+      <iframe id="pdfFrame" width="100%" height="400px" style="border:1px solid #ff4d4d;"></iframe>
+    </div>
+  </div>
+  <script type="text/javascript" src="Practica 3 P3.js"></script>
+</body>
+</html>
