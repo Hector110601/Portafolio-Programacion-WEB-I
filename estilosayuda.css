@@ -313,3 +313,34 @@ footer {
         flex-wrap: wrap;
     }
 }
+
+#support-blog {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+#faq-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+#faq-section ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+#community-section {
+    margin-top: 30px;
+}
+#qa-container .qa-item {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#qa-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
