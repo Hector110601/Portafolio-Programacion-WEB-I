@@ -1,43 +1,39 @@
 /* General */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #000000, #2b0000);
-    color: #f0f0f0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #ff4d4d;
+    color: #64ffda;
     text-align: center;
     margin: 10px 0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 p {
     text-align: justify;
     margin: 0 20px 20px 20px;
-    background: rgba(255, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 hr {
     border: none;
     height: 2px;
-    background: #ff4d4d;
+    background: #64ffda;
     margin: 20px auto;
     width: 80%;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #2b0000, #000000);
+    background: linear-gradient(135deg, #0f2027, #2c5364);
     color: #ffffff;
     padding: 20px 0;
-    border-bottom: 4px solid #ff4d4d;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-bottom: 4px solid #64ffda;
 }
 
 header h1, header h2 {
@@ -48,25 +44,20 @@ header h1, header h2 {
 ul, ol {
     margin: 20px 20px;
     padding-left: 40px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 li {
     margin: 10px 0;
-    color: #ff4d4d;
-    transition: color 0.3s ease;
-}
-
-li:hover {
-    color: #ff9999;
+    color: #b3e5fc;
 }
 
 /* Links */
 a {
-    color: #ff4d4d;
+    color: #64ffda;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -74,23 +65,24 @@ a {
 
 a:hover {
     color: #ffffff;
-    text-shadow: 0px 0px 8px #ff4d4d;
+    text-shadow: 0px 0px 8px #64ffda;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 15px 0;
-    background: #2b0000;
-    color: #f0f0f0;
-    margin-top: 20px;
-    border-top: 4px solid #ff4d4d;
+    background: #203a43;
+    color: #e0e0e0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Buttons */
 button {
     display: inline-block;
-    background: linear-gradient(to right, #ff4d4d, #800000);
+    background: linear-gradient(to right, #64ffda, #00796b);
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -102,8 +94,8 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(to right, #800000, #ff4d4d);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #00796b, #64ffda);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsiveness */
