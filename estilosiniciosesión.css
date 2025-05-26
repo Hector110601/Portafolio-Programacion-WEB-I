@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 header {
     background-color: #ffad1e;
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+main{
+    flex: 1;
 }
 
 .navbar {
@@ -68,6 +76,8 @@ body {
     line-height: 1.6;
     text-align: justify;
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Reseteo de márgenes y padding para evitar inconsistencias en los navegadores */
@@ -185,6 +195,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Pantallas grandes */

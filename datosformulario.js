@@ -3,20 +3,30 @@ function calcularTotal() {
     let total = document.getElementById("total");
     let precioTotal = 0;
     let resumenPedido = document.getElementById("resumenPedido");
+    let productosSeleccionados = false; // Nueva variable para verificar si hay productos
 
     resumenPedido.innerHTML = ""; // Limpia el resumen antes de agregar datos
 
     selects.forEach(select => {
         if (select.selectedIndex !== -1) {
             let opcionSeleccionada = select.options[select.selectedIndex];
-            let precio = parseFloat(opcionSeleccionada.value) || 0;
-            precioTotal += precio;
 
-            resumenPedido.innerHTML += `<p>${opcionSeleccionada.textContent}</p>`;
+            // Filtra productos sin agregar "Seleccione un producto"
+            if (opcionSeleccionada.value !== "0") {
+                let precio = parseFloat(opcionSeleccionada.value) || 0;
+                precioTotal += precio;
+                productosSeleccionados = true; // Marca que al menos un producto fue seleccionado
+
+                resumenPedido.innerHTML += `<p>${opcionSeleccionada.textContent}</p>`;
+            }
         }
     });
 
     total.textContent = "Total a pagar: $" + precioTotal.toLocaleString("es-MX") + " MXN";
+
+    // Mostrar el cuadro de resumen solo si hay productos seleccionados
+    let resumenSection = document.getElementById("resumen");
+    resumenSection.style.display = productosSeleccionados ? "block" : "none";
 
     verificarFormularioCompleto();
 }

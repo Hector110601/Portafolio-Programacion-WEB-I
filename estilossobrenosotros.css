@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 header {
     background-color: #ffad1e;
     color: white;
@@ -67,6 +71,9 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
 }
 
 h1{
@@ -74,6 +81,7 @@ h1{
 }
 
 main {
+    flex: 1;
     max-width: 800px;
     margin: 20px auto;
 }
@@ -102,7 +110,7 @@ section {
 }
 
 section:hover {
-    background-color: green; /* Cambiar el color de fondo al pasar el mouse */
+    background-color: #3771f0; /* Cambiar el color de fondo al pasar el mouse */
     transform: scale(1.05); /* Aumentar ligeramente el tamaño */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregar sombra más prominente */
     color: white;
@@ -113,6 +121,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Pantallas grandes */
@@ -120,10 +131,6 @@ footer {
     .search-bar {
         width: 400px;
         font-size: 18px;
-    }
-
-    .navbar ul {
-        justify-content: flex-start; /* Cambiar alineación */
     }
 }
 

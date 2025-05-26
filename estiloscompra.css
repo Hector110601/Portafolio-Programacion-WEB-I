@@ -4,15 +4,23 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
+
+html, body {
+    height: 100%;
+}
+
 main { 
     max-width: 800px;
     margin: 20px auto; 
+    flex: 1;
 }
 body { 
     font-family: Arial, sans-serif;
     line-height: 1.6;
     text-align: justify; 
     background-color: lightgray;
+    display: flex;
+    flex-direction: column;
 }
 section { 
     max-width: 900px;
@@ -171,6 +179,9 @@ footer {
     color: white; 
     text-align: center; 
     padding: 10px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Media Queries para responsive design */

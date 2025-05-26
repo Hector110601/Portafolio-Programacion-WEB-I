@@ -5,15 +5,22 @@
     font-family: 'Arial', sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 main {
     max-width: 800px;
     margin: 20px auto;
+    flex: 1;
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -223,12 +230,123 @@ header h2 {
     color: #2980b9;
 }
 
+/* Estilos generales para el blog */
+#support-blog {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Sección de preguntas del blog */
+#faq-section {
+    margin-bottom: 25px;
+}
+
+#faq-section h3 {
+    font-size: 1.6rem;
+    color: #ffad1e;
+    margin-bottom: 15px;
+}
+
+#faq-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#faq-section ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#faq-section ul li:hover {
+    background: #ffebc6;
+    transform: scale(1.05);
+}
+
+#faq-section ul li a {
+    color: #007bff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de comunidad */
+#community-section {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#community-section h3 {
+    font-size: 1.5rem;
+    color: #ffad1e;
+    margin-bottom: 15px;
+}
+
+/* Preguntas y respuestas */
+#qa-container .qa-item {
+    margin: 15px 0;
+    padding: 12px;
+    background: #fff;
+    border: 2px solid #ffad1e;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Formulario de preguntas */
+#qa-form textarea {
+    width: 100%;
+    height: 120px; /* Fija la altura a 120px */
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: none; /* Desactiva la opción de redimensionar */
+    transition: border-color 0.3s ease;
+}
+
+#qa-form textarea:focus {
+    border-color: #ffad1e;
+    box-shadow: 0 0 5px rgba(255, 173, 30, 0.5);
+}
+
+#qa-form button {
+    background-color: #ffad1e;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+#qa-form button:hover {
+    background-color: #e59416;
+    transform: scale(1.05);
+}
+
 /* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Media Queries para responsive design */

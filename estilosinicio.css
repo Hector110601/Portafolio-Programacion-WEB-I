@@ -4,6 +4,40 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+/* Animación de entrada deslizante para la imagen de bienvenida */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos generales para la imagen de bienvenida */
+.centered-image2 {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    animation: slideIn 0.8s ease-in-out; /* Animación de entrada */
+}
+
+/* Efecto al pasar el cursor */
+.centered-image2:hover {
+    transform: rotate(-3deg) scale(1.05); /* Giro ligero y aumento de tamaño */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    filter: brightness(1.2); /* Mayor iluminación */
+}
+
 .contenedor-promociones{
     display: flex;
     box-sizing: border-box;
@@ -23,8 +57,70 @@ video{
 }
 
 iframe {/*Centra el video*/
+  padding: 10px;
   display: block;
   margin: auto;
+}
+
+/* Animación de entrada lenta para el video */
+@keyframes fadeInSlow {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    border: 5px solid #ffad1e; /* Borde con color */
+    border-radius: 10px; /* Bordes redondeados */
+    animation: fadeInSlow 0.8s ease-in-out; /* Animación de entrada lenta */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el cursor */
+iframe:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+    transform: scale(1.03); /* Ligero aumento para destacar */
+}
+
+/* Estilos generales para imágenes */
+.centered-image1 {
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 10px; /* Bordes más estilizados */
+    border: 3px solid #ffad1e; /* Color naranja, acorde al diseño */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease, border-color 0.4s ease;
+    animation: slideIn 0.8s ease-in-out; /* Efecto de entrada deslizante */
+}
+
+/* Efecto al pasar el cursor */
+.centered-image1:hover {
+    padding: 10px;
+    transform: rotate(-3deg) scale(1.1); /* Giro ligero y aumento de tamaño */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    filter: brightness(1.2); /* Mayor iluminación */
+    border-color: #ff5e00; /* Cambia el borde al pasar el cursor */
+}
+
+/* Animación de entrada deslizante */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .centered-image1{
@@ -44,6 +140,8 @@ iframe {/*Centra el video*/
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -111,6 +209,7 @@ h1, h2, h3 {
 
 main {
     padding: 20px;
+    flex: 1;
 }
 
 footer {
@@ -118,6 +217,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .contenedor-mapa-tarjetas {
@@ -175,10 +277,6 @@ footer {
     .search-bar {
         width: 400px;
         font-size: 18px;
-    }
-
-    .navbar ul {
-        justify-content: flex-start; /* Cambiar alineación */
     }
 }
 
